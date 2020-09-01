@@ -1,0 +1,887 @@
+html{
+    /* Black Background Color for whole page */
+    background-color: black;
+}
+/* CSS for Body in general */
+body{
+    color: rgb(231, 224, 224);
+    margin: 0px;
+    font-size: 20px;
+    overflow-x: hidden;
+    font-family: "Balsamiq Sans";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* CSS for header section */
+#Header{
+    background-color: rgb(32,32,32);
+    top: 0%; 
+    height: 45px;
+    padding: 10px 10px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+
+}
+/* CSS For Hamburger icon to be displayed at breakpoint */
+#hamburger{
+    margin: 10px;
+    visibility: hidden;
+}
+/* CSS for logo */
+#logo{
+    width: 5%;
+    height: 1.8 rem;
+}
+/* Animation for logo on hover */
+#logo:hover{
+    animation: scalein 1s 
+    ease-in-out infinite;
+}
+/* CSS for Logo Name */
+#logo-name{
+    text-decoration: none;
+    position: absolute;
+    left: 6.5%;
+    font-family: fantasy;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 10px;;
+} 
+/* CSS according to link status */
+#logo-name:active, #logo-name:visited{
+    color: rgb(231, 224, 224);
+}
+/* CSS for Favourites section */
+#favourite {
+    position: absolute;
+    left: 15%;
+    display: flex;
+    bottom: 5px;
+    align-items: center;
+}
+/* CSS for favourite's icon */
+#favourite i{
+    padding: 5px;
+    position: relative;
+    bottom: 2px;
+    color: goldenrod;
+    animation: circle 2s ease-in-out infinite;
+}
+/* CSS for search bar */
+#search{
+    position: absolute;
+    right: 10vw;
+}
+.search-icon{
+    color: grey;
+    position: relative;
+    top: 2px;
+}
+.search-icon:hover{
+    color: white;
+}
+.search-form{
+    background-color: rgb(27,27,27);
+    height: 35px;
+    position: relative;
+    bottom: 2px;
+    width: 210px;
+    color: rgb(231, 224, 224); 
+    border: none;
+    border-radius: none;
+}
+/* CSS for margin and animation */
+.ml{
+    margin-left: 20px;
+    animation: shake 0.65s ease-in-out infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.user{
+    position: absolute;
+    border-radius: 100%;
+    left: 330px;
+    top: -5px;
+    height: 50px;
+    width: 50px;
+}
+/* General CSS for main */
+#main-section {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.section-heading {
+    font-weight: 400;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 20px;
+}
+
+.section-heading h3 {
+    line-height: 0px;
+}
+
+/* ====Carousel Section CSS Starts==== */
+
+#carsl {
+    margin-top: 70px; 
+    width: 90%;
+    height: auto;
+}
+
+.carousel {
+    position: relative;
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked+.carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    border-radius: 2px;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked~.control-1, #carousel-2:checked~.control-2, #carousel-3:checked~.control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    font-size: 28px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 30px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet, #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet, #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+/* Carousal CSS Ends */
+
+.combine{
+    display: flex;
+    flex-direction: row;
+}
+/* CSS for dropdown starts */
+.dropdown-content-Justin{
+    z-index: 100;
+    width: auto;
+    padding: 5px;
+    background: black;
+    border-radius: 2px;
+    display: none;  
+    font-size: 16px;
+    font-family: "Balsamiq Sans";
+    position: absolute;
+    top: 117%; 
+    right: 80%; 
+}
+.dropdown-content-CardiB{
+    z-index: 100;
+    width: auto;
+    padding: 5px;
+    background: black;
+    border-radius: 2px;
+    display: none;  
+    font-size: 16px;
+    font-family: "Balsamiq Sans";
+    position: absolute;
+    right: 80%;
+    top: 164%;
+}
+.dropdown-content-ED{
+    z-index: 100;
+    width: auto;
+    padding: 5px;
+    background: black;
+    border-radius: 2px;
+    display: none;  
+    font-size: 16px;
+    font-family: "Balsamiq Sans";
+    position: absolute;
+    top: 117%;
+    left: 48%;
+}
+.dropdown-content-Jason{
+    z-index: 100;
+    width: auto;
+    padding: 5px;
+    background: black;
+    border-radius: 2px;
+    display: none;  
+    font-size: 16px;
+    font-family: "Balsamiq Sans";
+    position: absolute;
+    top: 117%;
+    left: 29%;
+}
+.dropdown-content-Juice{
+    z-index: 100;
+    width: auto;
+    padding: 5px;
+    background: black;
+    border-radius: 2px;
+    display: none; 
+    font-size: 16px;
+    font-family: "Balsamiq Sans";
+    position: absolute;
+    top: 164%;
+    left: 29%;
+}
+
+.menu-icon:hover .dropdown-content-Justin{
+    display: block;
+}
+.menu-icon:hover .dropdown-content-CardiB{
+    display: block;
+}
+.menu-icon:hover .dropdown-content-Jason{
+    display: block;
+}
+.menu-icon:hover .dropdown-content-ED{
+    display: block;
+}
+.menu-icon:hover .dropdown-content-Juice{
+    display: block;
+}
+
+.dropdown-content-Jusin:hover{
+    background-color: rgb(31,26,24);
+}
+.dropdown-content-CardiB:hover{
+    background-color: rgb(31,26,24);
+}
+.dropdown-content-Jason:hover{
+    background-color: rgb(31,26,24);
+}
+.dropdown-content-ED:hover{
+    background-color: rgb(31,26,24);
+}
+.dropdown-content-Juice:hover{
+    background-color: rgb(31,26,24);
+}
+.dropdown-content-Juice a{
+    text-decoration: none;
+    color: white;
+}
+.dropdown-content-Jason a{
+    text-decoration: none;
+    color: white;
+}
+.dropdown-content-ED a{
+    text-decoration: none;
+    color: white;
+}
+.dropdown-content-Justin a{
+    text-decoration: none;
+    color: white;
+}
+.dropdown-content-CardiB a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.options-icon{
+    color: white;
+    margin-left: 220px;
+    margin-top: -40px;
+}
+.options-icon:hover .dropdown-child{
+    visibility: visible;
+}
+/* CSS and designs for dropdown ends*/
+/* CSS For Latest Release Section */
+#songs-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 8px;
+    width: 90%;
+}
+.songs-item{
+    display: flex;
+    flex-direction: column;
+}
+.image-settings{
+    height: 245px;
+    width: 245px;
+    border-radius: 10%;
+    padding: 15px;
+}
+.image-settings:hover{
+    animation: scalein 0.8s ease-in-out infinite;
+    
+}
+.song-name{
+    text-decoration: none;
+    color: inherit;
+    margin-top: 10px;
+    margin-left: 18px;
+    font-size: 1.2rem;
+    width: 70%;
+    font-weight: 100;
+}
+.song-name:hover{
+    animation: flash 1s ease-in-out infinite;
+}
+.artist-name{
+    text-decoration: none;
+    color: grey;
+    margin: 1px 0px;
+    margin-left: 18px;
+    font-size: 0.9rem;
+    width: 100%;
+    font-weight: 100;
+}
+.artist-name:hover{
+    animation: flash 1s ease-in-out infinite;
+}
+/* CSS for Latest Release ends */
+/* CSS for Popular Artists starts */
+#popular-artists-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 8px;
+    width: 92%;
+}
+.artists-image-settings{
+    height: 200px;
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 10px;
+}
+.artists-image-settings:hover{
+    animation: scalein 0.8s ease-in-out infinite;
+}
+.artist-image-name{
+    text-align: center;
+    /* margin: 10px; */
+    font-size: 16px;
+    z-index: 2;
+}
+/* CSS for Popular Artists ends */
+/* CSS for stations section starts */
+#stn {
+    width: 70%;
+    display: flex;
+}
+.stn-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background: rgb(36, 36, 36);
+    padding-left: 5px;
+    margin-left: 5px;
+    width: 95%;
+}
+
+.stn-info {
+    max-width: 152px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.stn-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.stn-img {
+    display: inline-block;
+    height: 142px;
+    width: 142px;
+    margin-top: 1.9rem;
+    margin-left: 5px;
+    border-radius: 50%;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.stn-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.stn-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(253, 29, 29, 0.3) 50%, rgba(252, 176, 69, 0.3) 100%);
+    border-radius: 50%;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.stn-info a {
+    text-decoration: none;
+    position: relative;
+    font-size: 1rem;
+    bottom: 87px;
+    left: 55px;
+    color: white;
+    z-index: 500;
+} 
+/* CSS for stations section ends */
+
+/* CSS for Top Genre Section Starts */
+.top-genre-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 8px;
+    height: 674.94px;
+    width: 85%;
+}
+.genre{
+    display: flex;
+    flex-direction: column;
+}
+/* CSS for genre names */
+.genre-name-dance{
+        z-index: 10;
+        transform: translate(21%, -100%);
+}
+.genre-name-edm{
+    z-index: 10;
+    transform: translate(63%, -130%);
+}
+.genre-name-rock{
+        z-index: 10;
+        transform: translate(88%, -2060%);
+}
+.genre-name-romance{
+        z-index: 10;
+        color: ghostwhite;
+        transform: translate(88%, -4900%);
+        font-weight: bold;
+}
+.genre-name-hiphop{
+        z-index: 10;
+        transform: translate(60%, -5050%);
+        font-weight: bolder;
+        color: ghostwhite;
+}
+.part1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* CSS for genre images */
+.img-potrait-dance{
+    height: 410px;
+    width: 35%;
+    border-radius: 10%;
+    margin: 10px;
+}
+.img-potrait-dance:hover{
+    animation: flash 1s ease-in-out 1;
+}
+.img-potrait-rock{
+    height: 430px;
+    width: 30%;
+    border-radius: 10%;
+    transform: translate(233%, -109%);
+}
+.img-potrait-rock:hover{
+    animation: flash 1s ease-in-out 1;
+}
+.img-landscape-edm{
+    height: 230px;
+    width: 70%;
+    border-radius: 10%;
+    margin: 10px;
+}
+.img-landscape-edm:hover{
+    animation: flash 1s ease-in-out 1;
+}
+.img-landscape-romance{
+    height: 200px;
+    width: 61.6%;
+    border-radius: 10%;
+    margin: 10px;
+    transform: translate(60%, -1135px);
+}
+.img-landscape-romance:hover{
+    animation: flash 1s ease-in-out 1;
+}
+.img-landscape-hiphop{
+    height: 240px;
+    width: 34%;
+    border-radius: 10%;
+    margin: 10px;
+    transform: translate(101%, -1175px);
+}
+.img-landscape-hiphop:hover{
+    animation: flash 1s ease-in-out 1;
+}
+/* CSS for Top Genre ends */
+
+/* CSS for music bar */
+#music-bar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 79px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(32,32,32);
+    z-index: 10000;
+}
+#image-display{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0.4vw;
+    margin: 1%;
+}
+#image-playing{
+    height: 100%;
+    width: 100%;
+}
+#names-display{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 6.2vw;
+    top: 18%;
+}
+#song-name-display{
+    color: rgb(165, 161, 161);
+    font-size: 16px;
+}
+#artist-name-display{
+    font-size:13px;
+    color:rgb(158, 151, 151);
+    margin-top: 2px;
+}
+#icons{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10000;
+    transform: translate(-30vw, 3vh);
+}
+#like-icon{
+    padding-right: 20px;
+    color:rgb(158, 151, 151);
+}
+#ban-icon{
+    color:rgb(158, 151, 151);
+}
+#legends-song{
+    width: 40vw;
+    position: absolute;
+    top: 17px;
+    height: 40px;
+    left: 33%;
+}
+#second-icons{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+#playlist-icon{
+    color:rgb(158, 151, 151);
+    padding-right: 20px;
+}
+#volume-icon{
+    color:rgb(158, 151, 151);
+}
+#playlist-icon:hover{
+    color: white;
+}
+#volume-icon:hover{
+    color: white;
+}
+/* CSS for music bar ends */
+
+/* CSS for aside section starts */
+#aside{
+    width: 29%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 126px;
+    position: relative;
+    right: 0%;
+}
+#Queue-Title-Box{
+    display: flex;
+    flex-wrap: wrap;
+}
+#Queue-Heading{
+    color:white;
+}
+#Queue-icon{
+    position: absolute;
+    right: 8vw;
+    display: none;
+}
+#View{
+    color: rgb(158, 151, 151);
+    position: absolute;
+    right: 15%;
+    font-size: 16px;
+}
+#View-icon{
+    color: rgb(158, 151, 151);
+    position: absolute;
+    right: 10%;
+}
+/* Dropdown for View section */
+.View-dropdown{
+    background-color: black;
+    position: absolute;
+    width: 120px;
+    height: auto;
+    left: -120px;
+    font-size: 16px;
+    display: none;
+    transform: translateY(-13px);
+    margin-left: 10px;
+}
+.View-dropdown li{
+    font-family: "Balsamiq Sans";
+    color: rgb(158, 151, 151);
+    padding: 1px;
+    font-size: 14px;
+}
+.View-dropdown a, .View-dropdown a:visited, .View-dropdown a:active{
+    text-decoration: none;
+    color: white;
+}
+#View-icon:hover .View-dropdown{
+    display: block;
+}
+#line{
+    border-left: 1px solid rgb(158, 151, 151);
+    transform: rotate(90deg) translate(-140px, -140px);
+    height: 395;
+}
+#playlist{
+    width: 100%;
+    height: 15%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.playlist-item{
+    width: 97%;
+    margin: 5px;
+    height: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.s-no{
+    color: white;
+    padding: 5px;
+    min-width: 30px; 
+}
+.playlist-item-image-div{
+    height: 100%;
+    width: 20%;
+}
+.playlist-item-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+.playlist-item-name-div{
+    margin-left: 5px;
+}
+.playlist-item-songname{
+    font-size: 14px;
+}
+.playlist-item-artistname{
+    font-size: 12px;
+    margin-top: 12px;
+}
+.playlist-item-heart{
+    margin-left: 120px;
+}
+/* CSS for aside section ends */
+#biggest{
+    width: 70%;
+    display: inline-block;
+}
+/* CSS for animation Keyframes */
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes circle{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes scalein{
+    0%{
+        transform: scale(1);
+    }
+    33%{
+        transform: scale(1.25);
+    }
+    66%{
+        transform: scale(1.25);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* CSS For Media Queries */
+@media only screen and (max-width: 1200px){
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #biggest{
+        width: 100%; 
+    }
+    #aside{
+        width: auto;
+    }
+} 
+@media only screen and (max-width: 900px){
+    #favourite{
+        display: none;
+    }
+    #search{
+        display: none;
+    }
+    #hamburger{
+        visibility: visible;
+    }
+    #logo-name{
+        display: none;
+    }
+}

@@ -1,0 +1,541 @@
+
+<html>
+    <head>
+        <!-- Viewport Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Linking CSS File "MusicPlayer.css" -->
+        <link rel="stylesheet" type="text/css" href="MusicPlayer.css">
+        <!-- Favicon icon tag -->
+        <link rel="icon" type="x-icon/image" href="music player logo.png">
+        <!-- Library to include Balsamiq Sans Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <!-- Link to include Animations from Animate.css -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+        />
+        <!-- Link to include Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/f1108a4306.js" crossorigin="anonymous"></script>
+        <!-- Website title "Drop" -->
+        <title>
+            Drop
+        </title>
+    </head>
+    <body>
+        <!-- Navigation Header bar -->
+        <nav id="Header">
+            <!-- Hamburger icon shown at breakpoint -->
+            <div id="hamburger">
+                <div class="fas fa-bars"></div>
+            </div>
+            <!-- Website Logo -->
+            <a href="file:///Users/tanmaygupta/Desktop/WebD/Main%20Projects/MusicPlayer.html" target ="_blank"><img id="logo" src="music player logo.png"></a>
+            <!-- Website Name -->
+            <a id="logo-name" href="file:///Users/tanmaygupta/Desktop/WebD/Main%20Projects/MusicPlayer.html" target ="_blank"><span>Drop</span></a>
+            <!-- Favourites star icon and "Favourites" -->
+            <div id="favourite">
+                <div id="favourite">
+                    <i class="fas fa-star"></i><span>Favourites</span>
+                </div>
+            </div>
+            <!-- Search Bar -->
+            <div id="search">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+                <input type="text" class="search-form" placeholder="Search Artist, Album, Movies etc.">
+                <span class="search-icon"><i class="fas fa-microphone"></i></span>
+                <span class="search-icon"><i class="fas fa-bell ml"></i></span>
+                <!-- user icon -->
+                <img class="user" src="anonymus.jpg">
+            </div>
+        </nav>
+        <div id="biggest">
+        <main id="main-section">
+
+            <!-- Carousel Section Starts -->
+    
+            <section id="carsl" class="section">
+    
+                <div class="carousel">
+                    <div class="carousel-inner">
+    
+                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
+                            hidden="" checked="checked">
+                        <div class="carousel-item">
+                            <a href=""><img src="brannon-naito-RER6g2wvEyw-unsplashfff Cropped.jpg"></a>
+                        </div>
+    
+                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
+                            hidden="">
+                        <div class="carousel-item">
+                            <a href=""><img src="t.jpg"></a>
+                        </div>
+    
+                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true"
+                            hidden="">
+                        <div class="carousel-item">
+                            <a href=""><img src="m.jpg"></a>
+                        </div>
+    
+                        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                        <label for="carousel-2" class="carousel-control next control-1">›</label>
+                        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                        <label for="carousel-3" class="carousel-control next control-2">›</label>
+                        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                        <label for="carousel-1" class="carousel-control next control-3">›</label>
+    
+                        <ol class="carousel-indicators">
+                            <li>
+                                <label for="carousel-1" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-2" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-3" class="carousel-bullet">•</label>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <!-- Latest Release Section -->
+            <section class="section">
+                <h3 class="section-heading">Latest Releases</h3>
+                <div id="songs-container">
+                    <div class="songs-item">
+                        <!-- Single Page webpage for XXXTentacion can be opened by clicking on the pic -->
+                        <a href="XXXtentacion.html" target="_blank"><img class="image-settings" src="xxxtentacion.jpg"></a>
+                        <div class="combination">
+                        <div>
+                        <div class="song-name">Changes</div>
+                        <div class="artist-name">XXXTentacion</div>
+                        </div>
+                        <!-- Dropdown menu will be opened on hovering over the 3 horizontal dots icon -->
+                        <div>
+                            <div class="menu-icon fas fa-ellipsis-h options-icon">
+                                <ul class="dropdown-content-Justin" type="none">
+                                    <a href="#"><li>Add to Queue</li></a>
+                                    <a href="#"><li>Add to Favourities</li></a>
+                                    <a href="#"><li>Play Next</li></a>
+                                    <a href="#"><li>Song Details</li></a>
+                                    </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="image-settings" src="savage_love.png">
+                        <div class="combination">
+                            <div>
+                            <div class="song-name">Savage Love</div>
+                            <div class="artist-name">Jason Derulo</div>
+                            </div>
+                            <div>
+                                <div class="menu-icon fas fa-ellipsis-h options-icon">
+                                    <ul class="dropdown-content-Jason" type="none">
+                                        <a href="#"><li>Add to Queue</li></a>
+                                        <a href="#"><li>Add to Favourities</li></a>
+                                        <a href="#"><li>Play Next</li></a>
+                                        <a href="#"><li>Song Details</li></a>
+                                        </ul>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="image-settings" src="shape_of_you.jpeg">
+                        <div class="combination">
+                            <div>
+                            <div class="song-name">Shape Of You</div>
+                            <div class="artist-name">ED Sheeran</div>
+                            </div>
+                            <div>
+                                <div class="menu-icon fas fa-ellipsis-h options-icon">
+                                    <ul class="dropdown-content-ED" type="none">
+                                        <a href="#"><li>Add to Queue</li></a>
+                                        <a href="#"><li>Add to Favourities</li></a>
+                                        <a href="#"><li>Play Next</li></a>
+                                        <a href="#"><li>Song Details</li></a>
+                                        </ul>
+                                
+                                </div>
+                                
+                            </div>
+                            </div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="image-settings" src="wap.webp">
+                        <div class="combination">
+                            <div>
+                            <div class="song-name">Wap</div>
+                            <div class="artist-name">Cardi B</div>
+                            </div>
+                            <div>
+                                <div class="menu-icon fas fa-ellipsis-h options-icon">
+                                    <ul class="dropdown-content-CardiB" type="none">
+                                        <a href="#"><li>Add to Queue</li></a>
+                                        <a href="#"><li>Add to Favourities</li></a>
+                                        <a href="#"><li>Play Next</li></a>
+                                        <a href="#"><li>Song Details</li></a>
+                                        </ul>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="image-settings" src="legends never die.png">
+                        <div class="combination">
+                            <div>
+                            <div class="song-name">Legends Never Die</div>
+                            <div class="artist-name">Juice WRLD</div>
+                            </div>
+                            <div>
+                                <div class="menu-icon fas fa-ellipsis-h options-icon">
+                                    <ul class="dropdown-content-Juice" type="none">
+                                        <a href="#"><li>Add to Queue</li></a>
+                                        <a href="#"><li>Add to Favourities</li></a>
+                                        <a href="#"><li>Play Next</li></a>
+                                        <a href="#"><li>Song Details</li></a>
+                                        </ul>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- Popular Artists Section -->
+                <h3 class="section-heading">Popular Artists</h3>
+                <div id="popular-artists-container">
+                    <div class="songs-item">
+                        <!-- Popular Artists Image -->
+                        <img class="artists-image-settings" src="bruno_mars.jpeg">
+                        <!-- Artist Name -->
+                        <div class="artist-image-name">Bruno Mars</div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="artists-image-settings" src="justin_bieber.jpg">
+                        <div class="artist-image-name">Justin Bieber</div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="artists-image-settings" src="Selena Gomez.jpg">
+                        <div class="artist-image-name">Selena Gomez</div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="artists-image-settings" src="jason_derulo.jpg">
+                        <div class="artist-image-name">Jason Derulo</div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="artists-image-settings" src="maroon5.jpg">
+                        <div class="artist-image-name">Maroon 5</div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="artists-image-settings" src="camila cabello.jpg">
+                        <div class="artist-image-name">Camila Cabello</div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="artists-image-settings" src="xxxtentacion.jpg">
+                        <div class="artist-image-name">XXXtentacion</div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="artists-image-settings" src="anne.jpg">
+                        <div class="artist-image-name">Anne Marie</div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="artists-image-settings" src="juicewrld.jpg">
+                        <div class="artist-image-name">Juice WRLD</div>
+                    </div>
+                    <div class="songs-item">
+                        <img class="artists-image-settings" src="Ed_Sheeran.jpg">
+                        <div class="artist-image-name">Ed Sheeran</div>
+                    </div>
+                </div>
+                <!-- Popular Stations Section -->
+                <h3 class="section-heading">Popular Stations</h3>
+                <div class="stn-container">
+
+                    <div class="stn-info">
+                        <div class=" stn-img">
+                            <img src="happy.jpg">
+                        </div>
+                        <a href="#">Happy</a>
+                    </div>
+    
+    
+                    <div class="stn-info">
+                        <div class="stn-img">
+                            <img src="Love.jpg">
+    
+                        </div>
+                        <a href="#">Love</a>
+                    </div>
+    
+    
+                    <div class="stn-info">
+                        <div class="stn-img">
+                            <img src="retro.jpg">
+                        </div>
+                        <a href="#">Retro</a>
+                    </div>
+    
+    
+                    <div class="stn-info">
+                        <div class="stn-img">
+                            <img src="journey.jpg">
+                        </div>
+                        <a href="#">Journey</a>
+                    </div>
+    
+    
+                    <div class="stn-info">
+                        <div class="stn-img">
+                            <img src="Beats.jpg">
+    
+                        </div>
+                        <a href="#">Beats</a>
+                    </div>
+    
+    
+                    <div class="stn-info">
+                        <div class="stn-img">
+                            <img src="latin.jpg">
+                        </div>
+                        <a href="#">Latin</a>
+                    </div>
+                </div>
+                <!-- Top Genres Section -->
+                <h3 class="section-heading">Top Genres</h3>
+                <div class="top-genre-container">
+                    <div class="part1">
+                        <div class="genre">
+                        <a href="#"><img class="img-potrait-dance" src="dance-potrait.jpg"></a>
+                        <span class="genre-name-dance">Dance</span>
+                        </div>
+                        <div class="genre">
+                        <a href="#"><img class="img-landscape-edm" src="edm-landscape.jpg"></a>
+                        <span class="genre-name-edm">EDM</span>
+                        </div>
+                        <div class="genre">
+                        <a href="#"><img class="img-potrait-rock" src="rock-potrait.jpg"></a>
+                        <span class="genre-name-rock">Rock</span>
+                        </div>
+                        <div class="genre">
+                        <a href="#"><img class="img-landscape-romance" src="romance.jpg"></a>
+                        <span class="genre-name-romance">Romance</span>
+                        </div>
+                        <div class="genre">
+                        <a href="#"><img class="img-landscape-hiphop" src="hiphop-potrait.jpg"></a>
+                        <span class="genre-name-hiphop">HipHop</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </main>
+            <!-- Section for footer for music bar -->
+            <footer id="music-bar">
+                <div id="image-display">
+                    <img id="image-playing" src="legends-never-die.jpg">
+                </div>
+                <div id="names-display">
+                <div id="song-name-display">
+                    <span>Legends Nev</span>
+                </div>
+                <div id="artist-name-display">
+                    <span>Doro</span>
+                </div>
+                </div>
+                <div id="icons">
+                    <div id="like-icon">
+                        <div class="far fa-heart"></div>
+                    </div>
+                    <div id="ban-icon">
+                        <div class="fas fa-ban"></div>
+                    </div>
+                </div>
+                <!-- Audio Tag with Legends Never die song -->
+                        <audio id="legends-song" controls autoplay src="Legends Never Die (ft. Against The Current) Worlds 2017 - League of Legends.mp3" ></audio>
+                        <div id="second-icons">
+                            <div id="playlist-icon">
+                                <div class="fas fa-list"></div>
+                            </div>
+                            <div id="volume-icon">
+                                <div class="fas fa-volume-up"></div>
+                            </div>
+                        </div>
+            </footer>
+        </div>
+        <!-- Aside Section with Queue -->
+            <div id="aside">
+                <div id="Queue-Title-Box">
+                    <div id="Queue-Heading">Queue</div>
+                    <div id="Queue-icon" class="fas fa-list"></div>
+                    <div id="View">Queue</div>
+                    <div id="View-icon" class="fas fa-caret-down">
+                        <!-- Dropdown list for queue can be opened by hovering on icon beside queue -->
+                        <ul class="View-dropdown" type="none">
+                            <a href="#"><li>Edit Queue</li></a>
+                            <a href="#"><li>Clear Queue</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Playlist -->
+                <div id="playlist">
+                    <div class="playlist-item">
+                        <div class="s-no">
+                            01
+                        </div>
+                        <div class="playlist-item-image-div">
+                            <img  class= "playlist-item-image" src="legends never die.png">
+                        </div>
+                        <div class="playlist-item-name-div">
+                            <div class="playlist-item-songname">Legends Never Die</div>
+                            <div class="playlist-item-artistname">Juice WRLD !!</div>
+                        </div>
+                            <div class="playlist-item-heart far fa-heart"></div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="s-no">
+                            02
+                        </div>
+                        <div class="playlist-item-image-div">
+                            <img  class= "playlist-item-image" src="legends never die.png">
+                        </div>
+                        <div class="playlist-item-name-div">
+                            <div class="playlist-item-songname">Legends Never Die</div>
+                            <div class="playlist-item-artistname">Juice WRLD !!</div>
+                        </div>
+                            <div class="playlist-item-heart far fa-heart"></div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="s-no">
+                            03
+                        </div>
+                        <div class="playlist-item-image-div">
+                            <img  class= "playlist-item-image" src="legends never die.png">
+                        </div>
+                        <div class="playlist-item-name-div">
+                            <div class="playlist-item-songname">Legends Never Die</div>
+                            <div class="playlist-item-artistname">Juice WRLD !!</div>
+                        </div>
+                            <div class="playlist-item-heart far fa-heart"></div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="s-no">
+                            04
+                        </div>
+                        <div class="playlist-item-image-div">
+                            <img  class= "playlist-item-image" src="legends never die.png">
+                        </div>
+                        <div class="playlist-item-name-div">
+                            <div class="playlist-item-songname">Legends Never Die</div>
+                            <div class="playlist-item-artistname">Juice WRLD !!</div>
+                        </div>
+                            <div class="playlist-item-heart far fa-heart"></div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="s-no">
+                            05
+                        </div>
+                        <div class="playlist-item-image-div">
+                            <img  class= "playlist-item-image" src="legends never die.png">
+                        </div>
+                        <div class="playlist-item-name-div">
+                            <div class="playlist-item-songname">Legends Never Die</div>
+                            <div class="playlist-item-artistname">Juice WRLD !!</div>
+                        </div>
+                            <div class="playlist-item-heart far fa-heart"></div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="s-no">
+                            06
+                        </div>
+                        <div class="playlist-item-image-div">
+                            <img  class= "playlist-item-image" src="legends never die.png">
+                        </div>
+                        <div class="playlist-item-name-div">
+                            <div class="playlist-item-songname">Legends Never Die</div>
+                            <div class="playlist-item-artistname">Juice WRLD !!</div>
+                        </div>
+                            <div class="playlist-item-heart far fa-heart"></div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="s-no">
+                            07
+                        </div>
+                        <div class="playlist-item-image-div">
+                            <img  class= "playlist-item-image" src="legends never die.png">
+                        </div>
+                        <div class="playlist-item-name-div">
+                            <div class="playlist-item-songname">Legends Never Die</div>
+                            <div class="playlist-item-artistname">Juice WRLD !!</div>
+                        </div>
+                            <div class="playlist-item-heart far fa-heart"></div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="s-no">
+                            08
+                        </div>
+                        <div class="playlist-item-image-div">
+                            <img  class= "playlist-item-image" src="legends never die.png">
+                        </div>
+                        <div class="playlist-item-name-div">
+                            <div class="playlist-item-songname">Legends Never Die</div>
+                            <div class="playlist-item-artistname">Juice WRLD !!</div>
+                        </div>
+                            <div class="playlist-item-heart far fa-heart"></div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="s-no">
+                            09
+                        </div>
+                        <div class="playlist-item-image-div">
+                            <img  class= "playlist-item-image" src="legends never die.png">
+                        </div>
+                        <div class="playlist-item-name-div">
+                            <div class="playlist-item-songname">Legends Never Die</div>
+                            <div class="playlist-item-artistname">Juice WRLD !!</div>
+                        </div>
+                            <div class="playlist-item-heart far fa-heart"></div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="s-no">
+                            10
+                        </div>
+                        <div class="playlist-item-image-div">
+                            <img  class= "playlist-item-image" src="legends never die.png">
+                        </div>
+                        <div class="playlist-item-name-div">
+                            <div class="playlist-item-songname">Legends Never Die</div>
+                            <div class="playlist-item-artistname">Juice WRLD !!</div>
+                        </div>
+                            <div class="playlist-item-heart far fa-heart"></div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="s-no">
+                            11
+                        </div>
+                        <div class="playlist-item-image-div">
+                            <img  class= "playlist-item-image" src="legends never die.png">
+                        </div>
+                        <div class="playlist-item-name-div">
+                            <div class="playlist-item-songname">Legends Never Die</div>
+                            <div class="playlist-item-artistname">Juice WRLD !!</div>
+                        </div>
+                            <div class="playlist-item-heart far fa-heart"></div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="s-no">
+                            12
+                        </div>
+                        <div class="playlist-item-image-div">
+                            <img  class= "playlist-item-image" src="legends never die.png">
+                        </div>
+                        <div class="playlist-item-name-div">
+                            <div class="playlist-item-songname">Legends Never Die</div>
+                            <div class="playlist-item-artistname">Juice WRLD !!</div>
+                        </div>
+                            <div class="playlist-item-heart far fa-heart"></div>
+                    </div>
+                </div>
+                    
+            </div>
+    </body>
+</html>

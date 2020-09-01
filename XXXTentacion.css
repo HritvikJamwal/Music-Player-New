@@ -1,0 +1,407 @@
+html{
+    /* Black Background Color for whole page */
+    background-color: black;
+}
+/* CSS for Body in general */
+body{
+    color: rgb(231, 224, 224);
+    margin: 0px;
+    font-size: 20px;
+    overflow-x: hidden;
+    font-family: "Balsamiq Sans";
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  */
+}
+/* CSS for header section */
+#Header{
+    background-color: rgb(32,32,32);
+    top: 0%; 
+    height: 45px;
+    padding: 10px 10px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+/* CSS For Hamburger icon to be displayed at breakpoint */
+#hamburger{
+    margin: 10px;
+    visibility: hidden;
+}
+/* CSS for logo */
+#logo{
+    width: 5%;
+    height: 1.8 rem;
+}
+/* Animation for logo on hover */
+#logo:hover{
+    animation: scalein 1s ease-in-out infinite;
+}
+/* CSS for Logo Name */
+#logo-name{
+    text-decoration: none;
+    position: absolute;
+    left: 6.5%;
+    font-family: fantasy;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 10px;;
+} 
+/* CSS according to link status */
+#logo-name:active, #logo-name:visited{
+    color: rgb(231, 224, 224);
+}
+/* CSS for Favourites section */
+#favourite {
+    position: absolute;
+    left: 15%;
+    display: flex;
+    bottom: 5px;
+    align-items: center;
+}
+/* CSS for favourite's icon */
+#favourite i{
+    padding: 5px;
+    position: relative;
+    bottom: 2px;
+    color: goldenrod;
+    animation: circle 2s ease-in-out infinite;
+}
+/* CSS for search bar */
+#search{
+    position: absolute;
+    right: 10vw;
+}
+.search-icon{
+    color: grey;
+    position: relative;
+    top: 2px;
+}
+.search-icon:hover{
+    color: white;
+}
+.search-form{
+    background-color: rgb(27,27,27);
+    height: 35px;
+    position: relative;
+    bottom: 2px;
+    width: 210px;
+    color: rgb(231, 224, 224); 
+    border: none;
+    border-radius: none;
+}
+/* CSS for margin and animation */
+.ml{
+    margin-left: 20px;
+    animation: shake 0.65s ease-in-out infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.user{
+    position: absolute;
+    border-radius: 100%;
+    left: 330px;
+    top: -5px;
+    height: 50px;
+    width: 50px;
+}
+/* CSS For About section of XXXTentacion */
+#XXXTentacion-about{
+    overflow-x: hidden;
+    width: 100%;
+    height: auto;
+}
+#XXXTentacion-background{
+    height: 85%;   
+}
+#XXXTentacion-image{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#XXXTentacion-title{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+#XXXTentacion-heading{
+    font-size: 50px;
+}
+#XXXTentacion-subtitle{
+    position: absolute;
+    left: 8%;
+    top: 52%;
+}
+#XXXTentacion-subheading{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#XXXTentacion-info{
+    position: absolute;
+    width: 40%;
+    top: 55%;
+    left: 8%;
+}
+#XXXtentacion-subinfo{
+    font-size: 13px;
+    font-family: inherit;
+    height: 80px;
+    overflow-y: scroll;
+}
+#track-num{
+    position: absolute;
+    left: 8%;
+    top: 72%;
+    width: auto;
+}
+#records{
+    font-size: 16px;
+}
+/* CSS for action buttons for XXXTentacion */
+#buttons{
+    display: flex;
+    width: 60%;
+    margin-left: 8%;
+}
+
+#Play{
+    height: 2.7rem;
+    width: 15%;
+    font-size: 19px;
+    color: white;
+    background-color: black;
+    border: 2px solid ghostwhite; 
+    margin-right: 1%;
+} 
+#Shuffle{
+    height: 2.7rem;
+    width: 15%;
+    font-size: 19px;
+    color: white;
+    background-color: black;
+    border: 2px solid ghostwhite;
+    margin-right: 1%;
+}
+
+#Subscribe{
+    height: 2.7rem;
+    width: 15%;
+    font-size: 19px;
+    color: white;
+    background-color: red;
+    border-radius: 3px;
+    border: 0px;
+}
+#tester{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+/* CSS for latest release section */
+#latest-release{
+    display: flex;
+    margin-left: 8%;
+    flex-direction: column;
+    top: 90%;
+    width: 65%;
+}
+#Latest-release-heading{
+    font-family: sans-serif;
+}
+#Latest-release-section{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid white; */
+}
+#Latest-release-track{
+    height: 80px;
+    /* border: 2px solid white; */
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+#Latest-release-track:hover{
+    background-color: rgb(36,36,37);
+}
+#num{
+    min-width: 40px;
+    padding-left: 10px;
+}
+#track-img{
+    height: 100%;
+    width: 15%;
+}
+#track-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+}
+#track-name{
+    margin-left: 10px;
+}
+.heart-icon{
+    position: absolute;
+    left: 65%;
+}
+/* CSS for aside section */
+#aside{
+    width: 25%;
+    vertical-align: top;
+    margin-top: 34px
+}
+#Similar-Artists-Heading{
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#Similar-Artists{
+    width: 100%;
+    height: auto;
+}
+.Similar-Artists-item{
+    height: 100px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+}
+.item-image{
+    height: 100%;
+    width: 30%;
+}
+.artist-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+}
+.artist-name{
+    padding-left: 5PX;
+}
+.artist-naam{
+    font-size: 18px;
+}
+.item-icon{
+    margin-left: 30%;
+}
+/* CSS for recently played */
+#recently-played-heading{
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#Recently-played{
+    height: auto;
+    width: 100%;
+}
+.Recently-played-item{
+    margin: 5px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.recently-played-image{
+    height: 100%;
+    width: 30%;
+}
+.recent-song-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+}
+.song-name{
+    padding-left: 5PX;
+}
+.recent-song-naam{
+    font-size: 18px;
+}
+.recent-icon{
+    margin-left: 25%;
+}
+/* CSS for keyframe animations */
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes circle{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes scalein{
+    0%{
+        transform: scale(1);
+    }
+    33%{
+        transform: scale(1.25);
+    }
+    66%{
+        transform: scale(1.25);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* CSS for media queries */
+@media only screen and (max-width: 1200px){
+    #tester{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #aside{
+        width: auto;
+    }
+    #latest-release{
+        width: 100%;
+    }
+} 
+@media only screen and(max-width: 1000px){
+    #Play{
+        font-size: 16px;
+    }
+    #Shuffle{
+        font-size: 16px;
+    }
+    #Subscribe{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 900px){
+    #favourite{
+        display: none;
+    }
+    #search{
+        display: none;
+    }
+    #hamburger{
+        visibility: visible;
+    }
+    #logo-name{
+        display: none;
+    }
+}
